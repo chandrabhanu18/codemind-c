@@ -1,26 +1,26 @@
 #include<stdio.h>
 int main()
 {
-    int bs;
-    float da,hra,gs;
-    scanf("%d",&bs);
-    if(bs<=10000)
+    int b;
+    float d,h,g;
+    scanf("%d",&b);
+    if(b<=10000)
     {
-        da=bs*0.80;
-        hra=bs*0.20;
-        gs=bs+da+hra;
+        d=b*0.80;
+        h=b*0.20;
+        g=b+h+d;
     }
-    else if(bs<=20000)
+    else if(b<=20000)
     {
-        da=bs*0.90;
-        hra=bs*0.25;
-        gs=bs+hra+da;
+        d=b*0.90;
+        h=b*0.25;
+        g=b+h+d;
     }
     else
     {
-        da=bs*0.95;
-        hra=bs*0.30;
-        gs=bs+da+hra;
+        d=b*0.95;
+        h=b*0.30;
+        g=b+h+d;
     }
-    printf("%.2f",gs);
+printf("%.2f",g);
 }
